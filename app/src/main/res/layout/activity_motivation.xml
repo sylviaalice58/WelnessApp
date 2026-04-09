@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MotivationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="2dp"
+        android:background="#844">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daily Motivation"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#1E3A8A"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/txtSubtitle"
+            android:layout_width="344dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="Start your day with positivity and inspiration"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+
+    <!-- Motivation Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="2dp"
+            android:background="#842">
+
+            <ImageView
+                android:id="@+id/imgMotivation"
+                android:layout_width="415dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/motivate" />
+        </LinearLayout>
+
+        <!-- Benefits of Motivation -->
+        <TextView
+            android:id="@+id/txtBenefitsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Benefits of Motivation"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1E3A8A"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Motivational Quotes -->
+        <TextView
+            android:id="@+id/txtBenefits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:lineSpacingExtra="8dp"
+            android:padding="12dp"
+            android:text="• Increases confidence and self-belief&#10;&#10;• Helps you achieve your goals&#10;&#10;• Improves concentration and productivity&#10;&#10;• Encourages you to work harder&#10;&#10;• Helps you overcome challenges&#10;&#10;• Reduces stress and negative thinking&#10;&#10;• Makes it easier to stay disciplined&#10;&#10;• Improves performance in school, work, and sports&#10;&#10;• Gives you energy to keep trying&#10;&#10;• Helps you develop a positive attitude"
+            android:textColor="#374151"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtQuotesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Motivational Quotes"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1E3A8A"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/txtQuotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Believe you can and you are halfway there.&#10;&#10;• Success starts with believing in yourself.&#10;&#10;• Do not stop until you are proud.&#10;&#10;• Small progress is still progress.&#10;&#10;• Dream big. Start small. Act now.&#10;&#10;• You are stronger than you think.&#10;&#10;• Push yourself, because no one else can do it for you.&#10;&#10;• Every day is a second chance.&#10;&#10;• Hard work beats talent when talent does not work hard.&#10;&#10;• Your only limit is your mind."
+            android:textSize="16sp"
+            android:textColor="#374151"
+            android:lineSpacingExtra="10dp"
+            android:padding="12dp"
+            android:background="#FFFFFF" />
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

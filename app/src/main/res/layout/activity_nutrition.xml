@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NutritionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nutrition"
+            android:textSize="32sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="#0345D9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:text="Good nutrition keeps your body strong and healthy"
+            android:textColor="#6B7280"
+            android:textSize="16sp" />
+
+        <!-- Image -->
+        <ImageView
+            android:id="@+id/imgNutrition"
+            android:layout_width="321dp"
+            android:layout_height="206dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="Healthy Food"
+            android:scaleType="fitCenter"
+            android:src="@drawable/nutrient" />
+
+        <!-- Benefits Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+          <TextView
+              android:id="@+id/txtBenefitsTitle"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Benefits of Good Nutrition"
+              android:textSize="22sp"
+              android:textStyle="bold"
+              android:textColor="#166534"
+              android:layout_marginBottom="12dp" />
+
+          <TextView
+              android:id="@+id/txtBenefits"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="• Gives your body energy&#10;&#10;• Helps you grow and stay strong&#10;&#10;• Improves concentration and memory&#10;&#10;• Keeps your heart and body healthy&#10;&#10;• Helps prevent diseases&#10;&#10;• Improves your mood and mental health&#10;&#10;• Keeps your bones and muscles strong"
+              android:textSize="16sp"
+              android:textColor="#374151"
+              android:lineSpacingExtra="8dp" />
+      </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Healthy Foods Section -->
+        <TextView
+            android:id="@+id/txtFoodsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Healthy Foods to Eat"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#166534"
+            android:layout_marginBottom="12dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="#FFFFFF">
+
+            <TextView
+                android:id="@+id/txtFoods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="• Fruits: Apples, oranges, bananas&#10;&#10;• Vegetables: Spinach, carrots, broccoli&#10;&#10;• Proteins: Eggs, fish, beans, chicken&#10;&#10;• Whole grains: Rice, oats, bread&#10;&#10;• Dairy: Milk, yogurt, cheese&#10;&#10;• Drink enough water every day"
+                android:textSize="16sp"
+                android:textColor="#374151"
+                android:lineSpacingExtra="8dp" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Bad Habits Section -->
+        <TextView
+            android:id="@+id/txtAvoidTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Foods to Avoid Too Much"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#B91C1C"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/txtAvoid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Too much sugar&#10;&#10;• Junk food&#10;&#10;• Too many soft drinks&#10;&#10;• Too much salt and oil&#10;&#10;• Eating late every night"
+            android:textSize="16sp"
+            android:textColor="#7F1D1D"
+            android:background="#FEE2E2"
+            android:padding="16dp"
+            android:lineSpacingExtra="8dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Daily Reminder -->
+        <TextView
+            android:id="@+id/txtReminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eat healthy, drink water, and take care of your body every day!"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="#16A34A" />
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

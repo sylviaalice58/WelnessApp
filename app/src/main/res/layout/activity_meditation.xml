@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MeditationActivity">
+
+    <!-- Meditation Section -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="#345">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meditation"
+                android:textColor="#7B61FF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Take a few minutes to relax your mind and body after your workout."
+                android:textColor="#FF000000"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="362dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/meditate"
+                android:padding="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="How to Meditate"
+                android:textColor="#222222"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="1. Sit comfortably in a quiet place.&#10;&#10;2. Close your eyes and relax your shoulders.&#10;&#10;3. Breathe in slowly through your nose.&#10;&#10;4. Hold for a few seconds.&#10;&#10;5. Breathe out slowly through your mouth.&#10;&#10;6. Focus only on your breathing for 5 minutes."
+                android:textColor="#FF000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Benefits of Meditation"
+                android:textColor="#222222"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="• Reduces stress and anxiety&#10;• Helps you feel calm and relaxed&#10;• Improves concentration&#10;• Helps your body recover after exercise&#10;• Improves sleep quality&#10;• Increases positive thinking&#10;• Lowers your heart rate and blood pressure&#10;• Helps control anger and frustration&#10;• Improves memory and learning&#10;• Makes it easier to stay focused in school or work&#10;• Helps you handle difficult situations calmly&#10;• Increases self-confidence&#10;• Helps reduce overthinking&#10;• Improves emotional balance&#10;• Encourages better breathing habits&#10;• Helps reduce muscle tension&#10;• Can improve your mood throughout the day&#10;• Helps you feel more refreshed and energetic"
+                android:textColor="#FF000000"
+                android:textSize="16sp"
+                android:layout_margin="10dp"
+                android:lineSpacingExtra="6dp"/>
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtMeditationTimer"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="05:00"-->
+<!--                android:textColor="#7B61FF"-->
+<!--                android:textSize="32sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnStartMeditation"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="12dp"-->
+<!--                android:text="Start Meditation"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:backgroundTint="#7B61FF"-->
+<!--                android:textColor="#FFFFFF" />-->
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#F4F6F9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExerciseActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercises"
+            android:textSize="32sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="#0345D9"/>
+
+        <!-- Exercise Header Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:background="#4A90E2">
+
+                <TextView
+                    android:id="@+id/txtExerciseTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Push-Ups"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Category: Strength Training"
+                    android:textColor="#EAF4FF"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtDifficulty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Difficulty: Beginner"
+                    android:textColor="#EAF4FF"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Estimated Time: 5 Minutes"
+                    android:textColor="#EAF4FF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Exercise Image -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp">
+
+            <ImageView
+                android:id="@+id/imgExercise"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pushup" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Instructions Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp"
+                android:background="#2A3FAF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Instructions"
+                    android:textColor="#000"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtInstructions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text="1. Place your hands shoulder-width apart.\n\n2. Keep your back straight.\n\n3. Lower your body until your chest nearly touches the floor.\n\n4. Push yourself back up.\n\n5. Repeat for 10 repetitions."
+                    android:textColor="#f9ffeb"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Progress Section -->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            app:cardCornerRadius="20dp"-->
+<!--            app:cardElevation="4dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="18dp"-->
+<!--                android:background="#14149d">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Progress"-->
+<!--                    android:textColor="#000"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <ProgressBar-->
+<!--                    android:id="@+id/progressExercise"-->
+<!--                    style="?android:attr/progressBarStyleHorizontal"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="12dp"-->
+<!--                    android:layout_marginTop="12dp"-->
+<!--                    android:max="100"-->
+<!--                    android:progress="40"-->
+<!--                    android:progressTint="#4A90E2" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/txtProgress"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:text="40% Completed"-->
+<!--                    android:textColor="#f5fff5"-->
+<!--                    android:textSize="14sp"/>-->
+<!--            </LinearLayout>-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+        <!-- Timer and Reps -->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="2">-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:layout_weight="1"-->
+<!--                app:cardCornerRadius="20dp"-->
+<!--                app:cardElevation="4dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:padding="20dp">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Timer"-->
+<!--                        android:textColor="#444444"-->
+<!--                        android:textSize="16sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/txtTimer"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:text="00:30"-->
+<!--                        android:textColor="#4A90E2"-->
+<!--                        android:textSize="28sp"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:layout_weight="1"-->
+<!--                app:cardCornerRadius="20dp"-->
+<!--                app:cardElevation="4dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:padding="20dp">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Repetitions"-->
+<!--                        android:textColor="#444444"-->
+<!--                        android:textSize="16sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/txtReps"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:text="3 Sets × 10 Reps"-->
+<!--                        android:textColor="#4A90E2"-->
+<!--                        android:textSize="20sp"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+<!--        </LinearLayout>-->
+
+        <!-- Notes Section -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp"
+                android:background="#754">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Notes"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/edtNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@android:drawable/edit_text"
+                    android:gravity="top|start"
+                    android:hint="Write your notes here..."
+                    android:inputType="textMultiLine"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+                    android:textColorHint="#000"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Action Buttons -->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:weightSum="3">-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnPrevious"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="6dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:backgroundTint="#B0BEC5"-->
+<!--                android:text="Previous"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#FFFFFF" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnStart"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="6dp"-->
+<!--                android:layout_marginEnd="6dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:backgroundTint="#4CAF50"-->
+<!--                android:text="Start"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#FFFFFF" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnNext"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="6dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:backgroundTint="#4A90E2"-->
+<!--                android:text="Next"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#FFFFFF" />-->
+<!--        </LinearLayout>-->
+
+    <!-- Squats -->
+    <!-- Plank -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="4dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:background="#2c32e2">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/plank" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plank"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Hold for 60 Seconds"
+                android:textColor="#000" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Start"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

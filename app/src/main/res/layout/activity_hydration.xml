@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#6789"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HydrationActivity">
+
+    <!-- Hydration Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="#8556">
+
+            <TextView
+                android:layout_width="198dp"
+                android:layout_height="wrap_content"
+                android:text="Hydration"
+                android:textColor="#2196F3"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:paddingBottom="7dp" />
+
+            <!-- Hydration Description -->
+            <TextView
+                android:id="@+id/txtHydrationInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Water is important because it helps your body work properly. Your body uses water to control temperature, carry nutrients, help digestion, and keep you healthy."
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:lineSpacingExtra="6dp"
+                android:layout_marginBottom="16dp" />
+
+            <ImageView
+                android:layout_width="373dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/hydrate" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Drink water before, during, and after your workout to stay hydrated and maintain energy."
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Recommended Intake"
+                android:textColor="#222222"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="• Before Exercise: 1–2 glasses\n• During Exercise: Small sips every 15 minutes\n• After Exercise: 2–3 glasses"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+<!--            <ProgressBar-->
+<!--                android:id="@+id/waterProgress"-->
+<!--                style="?android:attr/progressBarStyleHorizontal"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="12dp"-->
+<!--                android:layout_marginTop="18dp"-->
+<!--                android:max="8"-->
+<!--                android:progress="3"-->
+<!--                android:progressTint="#2196F3" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/txtWaterCount"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:text="3 / 8 glasses completed"-->
+<!--                android:textColor="#666666"-->
+<!--                android:textSize="15sp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnDrinkWater"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:text="I Drank Water"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:backgroundTint="#2196F3"-->
+<!--                android:textColor="#FFFFFF" />-->
+
+            <!-- Benefits of Hydration -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Benefits of Staying Hydrated"
+                android:textColor="#222222"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="• Gives your body more energy during exercise&#10;• Helps prevent dizziness and tiredness&#10;• Keeps your muscles working properly&#10;• Reduces the risk of cramps&#10;• Helps your body cool down through sweating&#10;• Improves concentration and focus&#10;• Helps you recover faster after a workout&#10;• Prevents dehydration and headaches"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp" />
+
+            <!-- Dehydration Effects -->
+            <TextView
+                android:id="@+id/txtDehydration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If you do not drink enough water, you may feel thirsty, tired, dizzy, get headaches, or have trouble concentrating."
+                android:textSize="16sp"
+                android:textColor="#B91C1C"
+                android:textStyle="italic"
+                android:lineSpacingExtra="6dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Water Reminder -->
+            <TextView
+                android:id="@+id/txtWaterReminder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Try to drink 6–8 glasses of water every day. Drink more when exercising or during hot weather."
+                android:textSize="16sp"
+                android:textColor="#065F46"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="14dp"
+                android:background="#D1FAE5" />
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</ScrollView>

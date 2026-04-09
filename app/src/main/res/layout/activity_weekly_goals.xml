@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeeklyGoalsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weekly Goals"
+            android:textSize="32sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="#0345D9"/>
+
+        <!-- Physical Activity -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Physical Activity"
+            android:textColorHint="#578"
+            android:textStyle="italic"
+            android:textSize="25dp"/>
+        <TextView
+            android:id="@+id/txtPhysicalActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• 150 min of moderate exercise per week\n• Strength training 2–3 times\n• Take the stairs instead of elevators"
+            android:textSize="16sp"
+            android:textColor="#374151"
+            android:lineSpacingExtra="6dp"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Hydration -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hydration"
+            android:textColorHint="#578"
+            android:textStyle="italic"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/txtHydrationGoals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Drink 6–8 glasses of water daily\n• Replace sugary drinks with water/herbal tea\n• Track water intake daily"
+            android:textSize="16sp"
+            android:textColor="#374151"
+            android:lineSpacingExtra="6dp"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Nutrition -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nutrition"
+            android:textColorHint="#578"
+            android:textStyle="italic"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/txtNutritionGoals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Eat 5 servings of fruits and vegetables daily\n• Limit processed foods and sugary snacks\n• Include lean proteins in meals"
+            android:textSize="16sp"
+            android:textColor="#374151"
+            android:lineSpacingExtra="6dp"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Sleep -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sleep"
+            android:textColorHint="#578"
+            android:textStyle="italic"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/txtSleepGoals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Aim for 7–9 hours sleep per night\n• Set consistent bedtime/wake-up schedule\n• Avoid screens 1 hour before bed"
+            android:textSize="16sp"
+            android:textColor="#374151"
+            android:lineSpacingExtra="6dp"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Mental Health -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mental Health"
+            android:textColorHint="#578"
+            android:textStyle="italic"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/txtMentalHealthGoals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• 10–15 min mindfulness/meditation daily\n• Write in gratitude journal 3 times/week\n• Schedule 1 relaxing activity this week"
+            android:textSize="16sp"
+            android:textColor="#374151"
+            android:lineSpacingExtra="6dp"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Habit Tracking -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Habit Tracking"
+            android:textColorHint="#578"
+            android:textStyle="italic"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/txtHabitTracking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Choose 1–2 new healthy habits each week\n• Record progress daily\n• Reflect on achievements at week's end"
+            android:textSize="16sp"
+            android:textColor="#374151"
+            android:lineSpacingExtra="6dp"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="20dp"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
